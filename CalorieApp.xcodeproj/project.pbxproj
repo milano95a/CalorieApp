@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCE2B452FCC8F157CA7737B2 /* libPods-CalorieApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56463AE168D0D6BD0CB2731 /* libPods-CalorieApp.a */; };
+		BD198956281149D9003092C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD198955281149D9003092C5 /* Constants.swift */; };
+		BD274C0E280FC1EC0089C70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C0D280FC1EC0089C70F /* AppDelegate.swift */; };
+		BD274C10280FC1EC0089C70F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C0F280FC1EC0089C70F /* SceneDelegate.swift */; };
+		BD274C12280FC1EC0089C70F /* DemoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C11280FC1EC0089C70F /* DemoMenuViewController.swift */; };
+		BD274C15280FC1EC0089C70F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD274C13280FC1EC0089C70F /* Main.storyboard */; };
+		BD274C17280FC1EF0089C70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD274C16280FC1EF0089C70F /* Assets.xcassets */; };
+		BD274C1A280FC1EF0089C70F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD274C18280FC1EF0089C70F /* LaunchScreen.storyboard */; };
+		BD274C442810094A0089C70F /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C432810094A0089C70F /* EntriesViewController.swift */; };
+		BD274C4628100C7A0089C70F /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C4528100C7A0089C70F /* Entry.swift */; };
+		BD274C4928100EA30089C70F /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C4728100EA30089C70F /* EntryTableViewCell.swift */; };
+		BD274C4A28100EA30089C70F /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD274C4828100EA30089C70F /* EntryTableViewCell.xib */; };
+		BD274C4F28111A450089C70F /* EntryFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD274C4E28111A440089C70F /* EntryFormViewController.swift */; };
+		BD4C84672815324B00300D65 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C84652815324B00300D65 /* ReportTableViewCell.swift */; };
+		BD4C84682815324B00300D65 /* ReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4C84662815324B00300D65 /* ReportTableViewCell.xib */; };
+		BD4C846A2815339300300D65 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C84692815339300300D65 /* BaseTableViewCell.swift */; };
+		BD5D04BA2811A3CC00BD8A17 /* Date+CalorieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D04B92811A3CC00BD8A17 /* Date+CalorieApp.swift */; };
+		BD6AAEDB281131050080E43A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6AAEDA281131050080E43A /* BaseViewController.swift */; };
+		BD6AAEDD281133B00080E43A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD6AAEDC281133B00080E43A /* GoogleService-Info.plist */; };
+		BD82DD9A2813D5FD0093C605 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82DD992813D5FD0093C605 /* AdminViewController.swift */; };
+		BD82DD9C2814337B0093C605 /* UIImage+CalorieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82DD9B2814337B0093C605 /* UIImage+CalorieApp.swift */; };
+		BD82DD9E28145BCF0093C605 /* String+CalorieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82DD9D28145BCF0093C605 /* String+CalorieApp.swift */; };
+		BD82DDA028152B720093C605 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82DD9F28152B720093C605 /* ReportViewController.swift */; };
+		BDEB975B2816991D00E0355D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB975A2816991D00E0355D /* Reachability.swift */; };
+		BDEB975D2816A31500E0355D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB975C2816A31500E0355D /* FirebaseManager.swift */; };
+		BDEB975F2816DE8700E0355D /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB975E2816DE8700E0355D /* FirebaseError.swift */; };
+		BDEB97652817079A00E0355D /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97642817079A00E0355D /* ImagePickerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD198955281149D9003092C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD274C0A280FC1EC0089C70F /* CalorieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD274C0D280FC1EC0089C70F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD274C0F280FC1EC0089C70F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD274C11280FC1EC0089C70F /* DemoMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMenuViewController.swift; sourceTree = "<group>"; };
+		BD274C14280FC1EC0089C70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD274C16280FC1EF0089C70F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD274C19280FC1EF0089C70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD274C1B280FC1EF0089C70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD274C432810094A0089C70F /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
+		BD274C4528100C7A0089C70F /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		BD274C4728100EA30089C70F /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		BD274C4828100EA30089C70F /* EntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		BD274C4E28111A440089C70F /* EntryFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFormViewController.swift; sourceTree = "<group>"; };
+		BD4C84652815324B00300D65 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		BD4C84662815324B00300D65 /* ReportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportTableViewCell.xib; sourceTree = "<group>"; };
+		BD4C84692815339300300D65 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		BD5D04B92811A3CC00BD8A17 /* Date+CalorieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CalorieApp.swift"; sourceTree = "<group>"; };
+		BD6AAEDA281131050080E43A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BD6AAEDC281133B00080E43A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD82DD992813D5FD0093C605 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		BD82DD9B2814337B0093C605 /* UIImage+CalorieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CalorieApp.swift"; sourceTree = "<group>"; };
+		BD82DD9D28145BCF0093C605 /* String+CalorieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CalorieApp.swift"; sourceTree = "<group>"; };
+		BD82DD9F28152B720093C605 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		BDEB975A2816991D00E0355D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BDEB975C2816A31500E0355D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		BDEB975E2816DE8700E0355D /* FirebaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		BDEB97642817079A00E0355D /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		E0B53380917F3903A98D010F /* Pods-CalorieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieApp.release.xcconfig"; path = "Target Support Files/Pods-CalorieApp/Pods-CalorieApp.release.xcconfig"; sourceTree = "<group>"; };
+		F068190152AE6FD4054C01F1 /* Pods-CalorieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieApp.debug.xcconfig"; path = "Target Support Files/Pods-CalorieApp/Pods-CalorieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F56463AE168D0D6BD0CB2731 /* libPods-CalorieApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalorieApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD274C07280FC1EC0089C70F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE2B452FCC8F157CA7737B2 /* libPods-CalorieApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24A847D26ED2EAB16FB5F987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F56463AE168D0D6BD0CB2731 /* libPods-CalorieApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A61BF7B240B64CA68795D62E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F068190152AE6FD4054C01F1 /* Pods-CalorieApp.debug.xcconfig */,
+				E0B53380917F3903A98D010F /* Pods-CalorieApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD274C01280FC1EC0089C70F = {
+			isa = PBXGroup;
+			children = (
+				BD274C0C280FC1EC0089C70F /* CalorieApp */,
+				BD274C0B280FC1EC0089C70F /* Products */,
+				A61BF7B240B64CA68795D62E /* Pods */,
+				24A847D26ED2EAB16FB5F987 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD274C0B280FC1EC0089C70F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD274C0A280FC1EC0089C70F /* CalorieApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD274C0C280FC1EC0089C70F /* CalorieApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD274C13280FC1EC0089C70F /* Main.storyboard */,
+				BD198955281149D9003092C5 /* Constants.swift */,
+				BD274C4C281117EB0089C70F /* Screens */,
+				BD274C4D281118190089C70F /* Views */,
+				BD274C4B281117C60089C70F /* Models */,
+				BD274C21280FC3D70089C70F /* Supporting Files */,
+				BD5D04BB2811A3D300BD8A17 /* Extensions */,
+				BDEB97612816E01A00E0355D /* Utils */,
+				BDEB97622816E02200E0355D /* Managers */,
+				BDEB97632816E03900E0355D /* Errors */,
+				BD274C1B280FC1EF0089C70F /* Info.plist */,
+				BD6AAEDC281133B00080E43A /* GoogleService-Info.plist */,
+			);
+			path = CalorieApp;
+			sourceTree = "<group>";
+		};
+		BD274C21280FC3D70089C70F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD274C0D280FC1EC0089C70F /* AppDelegate.swift */,
+				BD274C0F280FC1EC0089C70F /* SceneDelegate.swift */,
+				BD274C16280FC1EF0089C70F /* Assets.xcassets */,
+				BD274C18280FC1EF0089C70F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD274C4B281117C60089C70F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD274C4528100C7A0089C70F /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD274C4C281117EB0089C70F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BD6AAEDA281131050080E43A /* BaseViewController.swift */,
+				BD274C11280FC1EC0089C70F /* DemoMenuViewController.swift */,
+				BD274C432810094A0089C70F /* EntriesViewController.swift */,
+				BD274C4E28111A440089C70F /* EntryFormViewController.swift */,
+				BD82DD992813D5FD0093C605 /* AdminViewController.swift */,
+				BD82DD9F28152B720093C605 /* ReportViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BD274C4D281118190089C70F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD274C4728100EA30089C70F /* EntryTableViewCell.swift */,
+				BD274C4828100EA30089C70F /* EntryTableViewCell.xib */,
+				BD4C84652815324B00300D65 /* ReportTableViewCell.swift */,
+				BD4C84662815324B00300D65 /* ReportTableViewCell.xib */,
+				BD4C84692815339300300D65 /* BaseTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD5D04BB2811A3D300BD8A17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D04B92811A3CC00BD8A17 /* Date+CalorieApp.swift */,
+				BD82DD9B2814337B0093C605 /* UIImage+CalorieApp.swift */,
+				BD82DD9D28145BCF0093C605 /* String+CalorieApp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDEB97612816E01A00E0355D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB975A2816991D00E0355D /* Reachability.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BDEB97622816E02200E0355D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB975C2816A31500E0355D /* FirebaseManager.swift */,
+				BDEB97642817079A00E0355D /* ImagePickerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BDEB97632816E03900E0355D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB975E2816DE8700E0355D /* FirebaseError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD274C09280FC1EC0089C70F /* CalorieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD274C1E280FC1EF0089C70F /* Build configuration list for PBXNativeTarget "CalorieApp" */;
+			buildPhases = (
+				05BC9B9309412579C643F6C2 /* [CP] Check Pods Manifest.lock */,
+				BD274C06280FC1EC0089C70F /* Sources */,
+				BD274C07280FC1EC0089C70F /* Frameworks */,
+				BD274C08280FC1EC0089C70F /* Resources */,
+				D7B808C15B708B8DF0875281 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalorieApp;
+			productName = CalorieApp;
+			productReference = BD274C0A280FC1EC0089C70F /* CalorieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD274C02280FC1EC0089C70F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BD274C09280FC1EC0089C70F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BD274C05280FC1EC0089C70F /* Build configuration list for PBXProject "CalorieApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD274C01280FC1EC0089C70F;
+			productRefGroup = BD274C0B280FC1EC0089C70F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD274C09280FC1EC0089C70F /* CalorieApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD274C08280FC1EC0089C70F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD274C4A28100EA30089C70F /* EntryTableViewCell.xib in Resources */,
+				BD274C1A280FC1EF0089C70F /* LaunchScreen.storyboard in Resources */,
+				BD6AAEDD281133B00080E43A /* GoogleService-Info.plist in Resources */,
+				BD274C17280FC1EF0089C70F /* Assets.xcassets in Resources */,
+				BD274C15280FC1EC0089C70F /* Main.storyboard in Resources */,
+				BD4C84682815324B00300D65 /* ReportTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05BC9B9309412579C643F6C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalorieApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B808C15B708B8DF0875281 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalorieApp/Pods-CalorieApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalorieApp/Pods-CalorieApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalorieApp/Pods-CalorieApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD274C06280FC1EC0089C70F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD82DD9A2813D5FD0093C605 /* AdminViewController.swift in Sources */,
+				BD274C4928100EA30089C70F /* EntryTableViewCell.swift in Sources */,
+				BD82DD9E28145BCF0093C605 /* String+CalorieApp.swift in Sources */,
+				BD4C84672815324B00300D65 /* ReportTableViewCell.swift in Sources */,
+				BDEB975F2816DE8700E0355D /* FirebaseError.swift in Sources */,
+				BD274C12280FC1EC0089C70F /* DemoMenuViewController.swift in Sources */,
+				BD274C0E280FC1EC0089C70F /* AppDelegate.swift in Sources */,
+				BD274C4628100C7A0089C70F /* Entry.swift in Sources */,
+				BD274C442810094A0089C70F /* EntriesViewController.swift in Sources */,
+				BD198956281149D9003092C5 /* Constants.swift in Sources */,
+				BDEB975D2816A31500E0355D /* FirebaseManager.swift in Sources */,
+				BDEB97652817079A00E0355D /* ImagePickerManager.swift in Sources */,
+				BD82DDA028152B720093C605 /* ReportViewController.swift in Sources */,
+				BD6AAEDB281131050080E43A /* BaseViewController.swift in Sources */,
+				BD4C846A2815339300300D65 /* BaseTableViewCell.swift in Sources */,
+				BD5D04BA2811A3CC00BD8A17 /* Date+CalorieApp.swift in Sources */,
+				BDEB975B2816991D00E0355D /* Reachability.swift in Sources */,
+				BD274C4F28111A450089C70F /* EntryFormViewController.swift in Sources */,
+				BD82DD9C2814337B0093C605 /* UIImage+CalorieApp.swift in Sources */,
+				BD274C10280FC1EC0089C70F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD274C13280FC1EC0089C70F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD274C14280FC1EC0089C70F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD274C18280FC1EF0089C70F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD274C19280FC1EF0089C70F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD274C1C280FC1EF0089C70F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD274C1D280FC1EF0089C70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD274C1F280FC1EF0089C70F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F068190152AE6FD4054C01F1 /* Pods-CalorieApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPJ4257952;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aj.CalorieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD274C20280FC1EF0089C70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B53380917F3903A98D010F /* Pods-CalorieApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPJ4257952;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aj.CalorieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD274C05280FC1EC0089C70F /* Build configuration list for PBXProject "CalorieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD274C1C280FC1EF0089C70F /* Debug */,
+				BD274C1D280FC1EF0089C70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD274C1E280FC1EF0089C70F /* Build configuration list for PBXNativeTarget "CalorieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD274C1F280FC1EF0089C70F /* Debug */,
+				BD274C20280FC1EF0089C70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD274C02280FC1EC0089C70F /* Project object */;
+}
